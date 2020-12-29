@@ -1,0 +1,12 @@
+html {
+    --font: #333333;
+    --purple: #9D5CD0;
+    --black: #000000;
+    --white: #ffffff;
+}
+body {
+    font-family: 'Open Sans', arial, sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--font);
+}
