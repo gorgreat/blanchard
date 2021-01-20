@@ -9,7 +9,6 @@
 .down-icon {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 3px;
     width: 12px;
     height: 7px;
     max-width: 12px;
@@ -21,4 +20,21 @@
     height: 22px;
     max-width: 23px;
     fill: var(--white);
+}
+.telegram-icon,
+.whatsapp-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    max-width: 40px;
+}
+.vk-icon, 
+.instagram-icon, 
+.fasebook-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 46px;
+    height: 46px;
+    max-width: 46px;
 }

@@ -13,6 +13,30 @@ window.addEventListener('DOMContentLoaded', function() {
         },
     });
 
+    var mySwiper = new Swiper('.publication-slider', {
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 50,
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+    var mySwiper = new Swiper('.partners__slider', {
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 50,
+        centeredSlides: true,
+        loop: true,
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
     // select
     const element = document.querySelector('.select');
     const choices = new Choices(element, {              
@@ -59,6 +83,26 @@ window.addEventListener('DOMContentLoaded', function() {
         }
         )();
 
+        ymaps.ready(init);
+        function init(){
+            var myMap = new ymaps.Map("map", {
+                center: [55.758463, 37.601079],
+                zoom: 18
+            });
+
+            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: 'Шоурум №4. Леонтьевский переулок, дом 5, строение 1',
+            balloonContent: ''
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: '../image/mdi_location_on.png',
+            iconImageSize: [20, 20],
+            iconImageOffset: [0, 0]
+        }),
+
+            myMap.geoObjects.add(myPlacemark);
+        };
+      
 });
 
 

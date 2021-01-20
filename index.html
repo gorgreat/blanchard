@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/icons.css">    
 
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
     <script defer src="js/swiper-bundle.min.js"></script>
     <script defer src="js/choices.min.js"></script>
     <script defer src="js/script.js"></script>
@@ -161,7 +162,7 @@
 
         <section class="section  gallery">
             <div class="container">
-                <div class="row">
+                <div class="row gallery-row">
                     <div class="gallery__form">
                         <form action="" class="filter-form">
                             <h2 class="block-title block-title_white">Галерея</h2>                            
@@ -283,16 +284,19 @@
                     <div class="catalog__tab-content">                   
                         <div class="catalog__tab-decription">
                             <p class="catalog-description">france</p>
+                            <p class="catalog-description">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. </p>                            
                         </div>                        
                         <div class="catalog__tab-decription">
                             <p class="catalog-description">germany</p>
+                            <p class="catalog-description">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. </p>                            
                         </div>
                         <div class="catalog__tab-decription">
                             <p class="catalog-description">italy</p>
+                            <p class="catalog-description">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. </p>                            
                         </div>        
                         <div class="catalog__tab-decription  catalog__tab-decription_active">
                             <p class="catalog-description">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. </p>
-                            <div class="row">
+                            <div class="row catalog-row">
                                 <div class="col-lg-6">
                                     <figure class="author__figure">
                                         <img class="author__img"src="image/ghirlandaio.jpg" alt="Доменико Гирландайо">
@@ -303,7 +307,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <details open="open">
-                                        <summary class="author__years">C 1400 по 1499 гг.</summary>                                            
+                                        <summary class="author__years">C 1400 по 1499 гг. <span class="summary-icon"><svg class="down-icon"><use xlink:href="image/icons.svg#down-icon"></use></svg>                                    </span></summary>                                            
                                             <ul class="author__list">
                                                 <li class="author__list-item">
                                                     <a href="" class="author__list-item-link">Бенедетто ди Биндо</a>
@@ -379,30 +383,84 @@
                                                 </li>
                                             </ul>     
                                     </details>
-                                    <details>
-                                        <summary class="author__years">C 1500 по 1599 гг.</summary>                                            
-                                            другие авторы 2
-                                    </details>
-                                    <details>
-                                        <summary class="author__years">C 1600 по 1699 гг.</summary>                                            
-                                            другие авторы 3
-                                    </details>
-                                    <details>
-                                        <summary class="author__years">C 1700 по 1799 гг.</summary>                                            
-                                            другие авторы 4
-                                    </details>
-                                    <details>
-                                        <summary class="author__years">C 1800 по 1899 гг.</summary>                                            
-                                            другие авторы 5
-                                    </details>
-                                    <details>
-                                        <summary class="author__years">C 1900 по 1999 гг.</summary>                                            
-                                            другие авторы 6
-                                    </details>
-                                    <details>
-                                        <summary class="author__years">C 2000 г.</summary>                                            
-                                            другие авторы 7
-                                    </details>
+                                    <!-- <details >
+                                        <summary class="author__years">C 1500 по 1599 гг.<span class="summary-icon"><svg class="down-icon"><use xlink:href="image/icons.svg#down-icon"></use></svg>                                    </span></summary>                                            
+                                            <ul class="author__list">
+                                                <li class="author__list-item">
+                                                    <a href="" class="author__list-item-link">Бенедетто ди Биндо</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="" class="author__list-item-link">Бергоньоне, Амброджо</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="" class="author__list-item-link">Биссоло, Франческо</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="" class="author__list-item-link">Больтраффио, Джованни</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="" class="author__list-item-link">Бонсиньори, Франческо</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="" class="author__list-item-link">Боттичини, Рафаэлло</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="" class="author__list-item-link">Брамантино</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="" class="author__list-item-link">Бреа, Людовико</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="" class="author__list-item-link">Бьяджо д’Антонио Туччи</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="" class="author__list-item-link">Веккьетта</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="" class="author__list-item-link">Андреа Верроккьо</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="" class="author__list-item-link">Доменико Гирландайо</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="" class="author__list-item-link">Беноццо Гоццоли</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="" class="author__list-item-link">Граначчи, Франческо</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="" class="author__list-item-link">Грегорио ди Чекко</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="" class="author__list-item-link">Джованни да Удине</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="" class="author__list-item-link">Джованни ди Паоло</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="" class="author__list-item-link">Джорджоне</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="" class="author__list-item-link">Парентино, Бернардо</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="" class="author__list-item-link">Пезеллино</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="" class="author__list-item-link">Пьетро Перуджино</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="" class="author__list-item-link">Перуцци, Бальдассаре</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="" class="author__list-item-link">Пизанелло</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="" class="author__list-item-link">Пинтуриккьо</a>
+                                                </li>
+                                            </ul>     
+                                    </details> -->
+
                                 </div>
 
                             </div>                              
@@ -430,8 +488,10 @@
                                     <figcaption class="events__item-img-title">Музей им. Щусева <span>с 20 марта по 30 апреля </span></figcaption>
                                 </figure>
                                 <div class="events__item-text">
-                                    <h3 class="events__item-title">Книжная гравюра в живом восприятии</h3>
-                                    <p>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.</p>
+                                    <div class="events__item-txt">
+                                        <h3 class="events__item-title">Книжная гравюра в живом восприятии</h3>
+                                        <p>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.</p>
+                                    </div>                                        
                                     <a href="" class="events__item-readmore">Подробнее</a>
                                 </div>
                             </article>
@@ -443,8 +503,10 @@
                                     <figcaption class="events__item-img-title">ММОМА <span>24 марта 19:00</span></figcaption>
                                 </figure>
                                 <div class="events__item-text">
-                                    <h3 class="events__item-title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
-                                    <p>Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки новых принципов формирования...</p>
+                                    <div class="events__item-txt">
+                                        <h3 class="events__item-title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+                                        <p>Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки новых принципов формирования...</p>
+                                    </div>   
                                     <a href="" class="events__item-readmore">Подробнее</a>
                                 </div>
                             </article>
@@ -456,8 +518,40 @@
                                     <figcaption class="events__item-img-title">Еврейский музей <span>с 31 марта по 21 апреля</span></figcaption>
                                 </figure>
                                 <div class="events__item-text">
-                                    <h3 class="events__item-title">Выставка «Формация 2020»</h3>
-                                    <p>Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов формирования материально-технической и кадровой базы.</p>
+                                    <div class="events__item-txt">
+                                        <h3 class="events__item-title">Выставка «Формация 2020»</h3>
+                                        <p>Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов формирования материально-технической и кадровой базы.</p>
+                                    </div>
+                                    <a href="" class="events__item-readmore">Подробнее</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="events__item">
+                            <article class="events__item-content">
+                                <figure class="events__item-img">
+                                    <img src="image/events04.jpg" alt="XXIV Международная биеннале молодого искусства">
+                                    <figcaption class="events__item-img-title">Третьяковка на Крымском валу <span>с 31 марта по 21 апреля</span></figcaption>
+                                </figure>
+                                <div class="events__item-text">
+                                    <div class="events__item-txt">
+                                        <h3 class="events__item-title">XXIV Международная биеннале молодого искусства</h3>
+                                        <p>Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых...</p>
+                                    </div>
+                                    <a href="" class="events__item-readmore">Подробнее</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="events__item">
+                            <article class="events__item-content">
+                                <figure class="events__item-img">
+                                    <img src="image/events05.jpg" alt="Джон Винзор. Фотографии из серии «Метафора серебра»">
+                                    <figcaption class="events__item-img-title">ММАМ <span>с 8 апреля по 20 мая</span></figcaption>
+                                </figure>
+                                <div class="events__item-text">
+                                    <div class="events__item-txt">
+                                        <h3 class="events__item-title">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+                                        <p>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.</p>
+                                    </div>
                                     <a href="" class="events__item-readmore">Подробнее</a>
                                 </div>
                             </article>
@@ -473,8 +567,7 @@
                     <div class="col-lg-3">
                         <h2 class="block-title">Издания</h2>
                         <form action="" class="publication-form">
-                            <label for="" class="publication-form__label">Категории</label>
-
+                            <label for="" class="publication-form-label">Категории</label>
                             <div class="publication-form__list-item">
                                 <input id="p01" type="checkbox" class="publication-form__checkbox">
                                 <label class="publication-form__label" for="p01">Бестселлеры</label>
@@ -523,59 +616,194 @@
                                 <input id="p12" type="checkbox" class="publication-form__checkbox">
                                 <label class="publication-form__label" for="p12">Журналы и газеты</label>
                             </div>
+                            <div class="publication-form__range">
+                                <label for="" class="publication-form-label">Цена</label>
+                                <div class="publication-form__range-row">
+                                    <div class="publication-form__range-item">
+                                        <label for="from">От</label>
+                                        <input id="from" type="text" placeholder="50">
+                                    </div>
+                                    <div class="publication-form__range-item">
+                                        <label for="to">до</label>
+                                        <input id="to" type="text" placeholder="25 000">
+                                    </div>
+                                    <label>руб</label>                                    
+                                </div>
+                            </div>
                         </form>
                     </div>
-                    <div class="col-lg-9"></div>
+                    <div class="col-lg-9">
+                        <div class="swiper-container publication-slider">
+                            <div class="gallery-nav">
+                                <div class="swiper-button-prev"></div>
+                                <div class="slider-items-count">1 / 3</div>
+                                <div class="swiper-button-next"></div>        
+                            </div>                               
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide publication-item">
+                                    <img src="image/publication01.jpg" width="350" height="390" alt="Искусство цвета Иттен, Иоханнес">
+                                    <div class="publication-item__text">
+                                        <div class="publication-item__title">Искусство цвета <span>Иттен, Иоханнес</span></div>
+                                        <div class="publication-item__price">620 руб</div>
+                                    </div>
+                                    <a href="" class="publication-item__order-link">Заказать</a>
+                                </div>
+                                <div class="swiper-slide publication-item">
+                                    <img src="image/publication02.jpg" width="350" height="390" alt="Типографика Искусство цвета Рудер, Эмиль">
+                                    <div class="publication-item__text">
+                                        <div class="publication-item__title">Типографика Искусство цвета <span>Рудер, Эмиль</span></div>
+                                        <div class="publication-item__price">2 450 руб</div>
+                                    </div>
+                                    <a href="" class="publication-item__order-link">Заказать</a>
+                                </div>
+                                <div class="swiper-slide publication-item">
+                                    <img src="image/publication03.jpg" width="350" height="390" alt="Книга про буквы Гордон, Юрий">
+                                    <div class="publication-item__text">
+                                        <div class="publication-item__title">Книга про буквы<span>Гордон, Юрий</span></div>
+                                        <div class="publication-item__price">2 200 руб</div>
+                                    </div>
+                                    <a href="" class="publication-item__order-link">Заказать</a>
+                                </div>
+                                <div class="swiper-slide publication-item">
+                                    <img src="image/publication04.jpg" width="350" height="390" alt="Николай Ильин Кричевский, Владимир">
+                                    <div class="publication-item__text">
+                                        <div class="publication-item__title">Николай Ильин <span>Кричевский, Владимир</span></div>
+                                        <div class="publication-item__price">1 100 руб</div>
+                                    </div>
+                                    <a href="" class="publication-item__order-link">Заказать</a>
+                                </div>
+                                <div class="swiper-slide publication-item">
+                                    <img src="image/publication05.jpg" width="350" height="390" alt="Модульные сетки в граф...Мюллер-Брокманн, Йозеф">
+                                    <div class="publication-item__text">
+                                        <div class="publication-item__title">Модульные сетки в граф...<span>Мюллер-Брокманн, Йозеф</span></div>
+                                        <div class="publication-item__price">1 450 руб</div>
+                                    </div>
+                                    <a href="" class="publication-item__order-link">Заказать</a>
+                                </div>
+                                <div class="swiper-slide publication-item">
+                                    <img src="image/publication06.jpg" width="350" height="390" alt="Эволюция графических ст... Хеллер, Чваст">
+                                    <div class="publication-item__text">
+                                        <div class="publication-item__title">Эволюция графических ст...<span>Хеллер, Чваст</span></div>
+                                        <div class="publication-item__price">3 200 руб</div>
+                                    </div>
+                                    <a href="" class="publication-item__order-link">Заказать</a>
+                                </div>
+                                <div class="swiper-slide publication-item">
+                                    <img src="image/publication07.jpg" width="350" height="390" alt="Искусство и визуальное в... Арнхейм, Рудольф">
+                                    <div class="publication-item__text">
+                                        <div class="publication-item__title">Искусство и визуальное в...<span>Арнхейм, Рудольф</span></div>
+                                        <div class="publication-item__price">2 200 руб</div>
+                                    </div>
+                                    <a href="" class="publication-item__order-link">Заказать</a>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
                 </div>
             </div>
-        </section>
+        </section> 
 
         <section class="section projects">
             <div class="container">
                 <h2 class="block-title">Проекты</h2>
-                <p>Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: blanchard-art.ru/projects/about</p>
+                <p>Предварительные выводы: постоянное информационно-пропагандистское обеспечение 
+                    <span class="tooltip">
+                        <span class="tooltip-icon"></span>
+                        <span class="tooltip-popup">Пример современных тенденций - современная методология разработки </span>
+                    </span>
+                   нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть 
+                рассмотрены 
+                <span class="tooltip">
+                    <span class="tooltip-icon"></span>
+                    <span class="tooltip-popup">Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции  </span>
+                </span>                  
+                
+                исключительно в разрезе маркетинговых и финансовых 
+                <span class="tooltip">
+                    <span class="tooltip-icon"></span>
+                    <span class="tooltip-popup">В стремлении повысить качество</span>
+                </span>                
+                предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: blanchard-art.ru/projects/about</p>
                 <h3>Партнёры проектов:</h3>
-                <div class="projects__slider">
-                    <div class="projects__slider-item">
-                        <img src="image/freelands.png" alt="Freelans Foundation" class="projects__slider-item-img">
-                    </div>
-                </div>                
+
+                <!-- <div class="partners__slider-wrapper">
+                    <div class="swiper-container partners__slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide  partners__slider-item">
+                                <img src="image/partners/1849.png" alt="1849" class="partneres__slider-item-img">
+                            </div>
+                            <div class="swiper-slide  partners__slider-item">
+                                <img src="image/partners/camden.png" alt="camden" class="partneres__slider-item-img">
+                            </div>
+                            <div class="swiper-slide  partners__slider-item">
+                                <img src="image/partners/esad.png" alt="esad" class="partneres__slider-item-img">
+                            </div>
+                            <div class="swiper-slide  partners__slider-item">
+                                <img src="image/partners/freelands.png" alt="freelands" class="partneres__slider-item-img">
+                            </div>
+                            <div class="swiper-slide  partners__slider-item">
+                                <img src="image/partners/hiscox.png" alt="freelands" class="partneres__slider-item-img">
+                            </div>
+                            <div class="swiper-slide  partners__slider-item">
+                                <img src="image/partners/ica.png" alt="ica" class="partneres__slider-item-img">
+                            </div>
+                            <div class="swiper-slide  partners__slider-item">
+                                <img src="image/partners/stassen.png" alt="stassen" class="partneres__slider-item-img">
+                            </div>
+                            <div class="swiper-slide  partners__slider-item">
+                                <img src="image/partners/watts.png" alt="watts" class="partneres__slider-item-img">
+                            </div>
+                            <div class="swiper-slide  partners__slider-item">
+                                <img src="image/partners/workhouse.png" alt="workhouse" class="partneres__slider-item-img">
+                            </div>
+                        </div>    
+                        <div class="partners__slider-nav">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>                          
+                        </div>                                
+                    </div>    
+                </div>             -->
             </div>
         </section>
 
         <section class="section  contacts">
             <div class="container">
-                <h2 class="block-title">Контакты</h2>
-                <div class="row">
-                    <div class="col-lg-3">
-                        <h3>Шоурум №4</h3>
-                        <address>Леонтьевский переулок, дом 5, строение 1</address> 
-                        <form action="" class="callback">
-                            <div class="callback__title">Заказать обратный звонок</div>
-                            <input type="text" class="input" name="name" placeholder="Имя*" required>
-                            <input type="tel" class="input" name="tel" placeholder="Телефон*" required>
-                            <button type="submit" class="callback__submit">Заказать</button>
-                        </form>
-                        <div class="quick-order">
-                            <div class="quick-order__title">Связаться в один клик</div>
-                            <ul class="quick-order__list">
-                                <li class="quick-order__item">
-                                    <a href="#" class="quick-order__link  quick-order__link-whatsup"></a>
-                                </li>
-                                <li class="quick-order__item">
-                                    <a href="#" class="quick-order__link  quick-order__link-telegramm"></a>
-                                </li>
-                            </ul>
-                        </div>
-
-
-
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="map"></div>
+                <h2 class="block-title">Контакты</h2>    
+            </div>
+            <div class="contacts-row">
+                <div class="contacts-col">
+                    <h3>Шоурум №4</h3>
+                    <address>Леонтьевский переулок, дом 5, строение 1</address> 
+                    <form action="" class="callback">
+                        <div class="callback__title">Заказать обратный звонок</div>
+                        <input type="text" class="input" name="name" placeholder="Имя*" required>
+                        <input type="tel" class="input" name="tel" placeholder="Телефон*" required>
+                        <button type="submit" class="callback__submit">Заказать</button>
+                    </form>
+                    <div class="quick-order">
+                        <div class="quick-order__title">Связаться в один клик</div>
+                        <ul class="quick-order__list">
+                            <li class="quick-order__item">
+                                <a href="#" class="quick-order__link  quick-order__link-whatsup">
+                                    <svg class="whatsapp-icon">
+                                        <use xlink:href="/image/icons.svg#whatsapp-icon"></use>
+                                    </svg>    
+                                </a>
+                            </li>
+                            <li class="quick-order__item">
+                                <a href="#" class="quick-order__link  quick-order__link-telegram">
+                                    <svg class="telegram-icon">
+                                        <use xlink:href="/image/icons.svg#telegram-icon"></use>
+                                    </svg>                                    
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
+                <div class="map">
+                    <div id="map"></div>
+                </div>
+            </div>                        
         </section>
 
         <footer class="footer">
@@ -587,9 +815,21 @@
                     <div class="col-6">
                         <ul class="social__list">
                             <li class="social__item">
-                                <a href="#" class="social__link  social__link-vk"></a>
-                                <a href="#" class="social__link  social__link-in"></a>
-                                <a href="#" class="social__link  social__link-fs"></a>
+                                <a href="#" class="social__link  social__link-vk">
+                                    <svg class="vk-icon">
+                                        <use xlink:href="/image/icons.svg#vk-icon"></use>
+                                    </svg>                                      
+                                </a>
+                                <a href="#" class="social__link  social__link-in">
+                                    <svg class="instagram-icon">
+                                        <use xlink:href="/image/icons.svg#instagram-icon"></use>
+                                    </svg>                                       
+                                </a>
+                                <a href="#" class="social__link  social__link-fs">
+                                    <svg class="fasebook-icon">
+                                        <use xlink:href="/image/icons.svg#fasebook-icon"></use>
+                                    </svg>                                                          
+                                </a>
                             </li>
                         </ul>
                     </div>
