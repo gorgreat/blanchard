@@ -27,13 +27,10 @@ window.addEventListener('DOMContentLoaded', function() {
     var mySwiper = new Swiper('.partners__slider', {
         loop: true,
         slidesPerView: 3,
-        spaceBetween: 50,
-        centeredSlides: true,
-        loop: true,
-
+        spaceBetween: 70,
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.partners__slider-next',
+            prevEl: '.partners__slider-prev',
         },
     });
 

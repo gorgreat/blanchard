@@ -139,11 +139,11 @@
   */
 }
 .gallery-nav {
-  margin: 25px 0;
+  margin: 33px 0;
   display: flex;
 }
 .slider-items-count {
-  margin: 0 25px;
+  margin: 0 20px;
 }
 .swiper-button-prev,
 .swiper-button-next {
