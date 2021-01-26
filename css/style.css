@@ -1136,12 +1136,8 @@ details[open] .author__list {
   padding: 2px 0;
   text-align: center;
 }
-.tooltip {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-}
 .tooltip-icon {
+  position: relative;
   margin: 0 5px;
   display: inline-block;
   vertical-align: middle;
@@ -1156,39 +1152,47 @@ details[open] .author__list {
   background-position: center;
   background-repeat: no-repeat;
 }
-.tooltip-popup {
-  visibility: hidden;
+.tooltip-icon::after {
   position: absolute;
-  width: 260px;
-  height: auto;
-  top: -50px;
-  left: 50%;
-  transform: translateX(-50%);
+  content: attr(data-tooltip); 
+  width: 100%;
+  max-width: 260px;
+  min-width: 260px;
   box-sizing: border-box;
-  padding: 5px;
-  background-color: #CACACA;
-  color: var(--white);
-  opacity: 0;
+  padding: 8px 10px;
+  left: 50%;
+  bottom: calc(100% + 10px);
+  transform: translateX(-50%);
+	background-color: #CACACA;
+	color: var(--white);
   font-weight: 600;
   font-size: 12px;
-  line-height: 16px;
-  text-align: center;  
-  transition: .2s all linear;
-}
-.tooltip-popup::after {
+  line-height: normal;
+  opacity: 0; 
+	visibility: hidden; 
+  transition: all 0.4s linear; 
+}		
+.tooltip-icon::before {
   content: "";
   position: absolute;
-  bottom: -17px;
   left: 50%;
-  transform: translateX(-58%);
-  width: 10px;
-  height: 10px;
-  border: 10px solid transparent; 
-  border-top: 10px solid #CACACA; 
+  transform: translateX(-50%);  
+  bottom: calc(100% - 1px);  
+  width: 7px;
+  height: 7px;
+  border: 7px solid transparent; 
+  border-top: 7px solid #CACACA; 
+  opacity: 0; 
+	visibility: hidden; 
+  transition: all 0.1s linear;    
 }
-.tooltip:hover .tooltip-popup{
-  visibility: visible;
-  opacity: 1;
+.tooltip-icon:hover::after {
+	opacity: 1; 
+	visibility: visible;
+}
+.tooltip-icon:hover::before {
+	opacity: 1; 
+	visibility: visible;
 }
 .projects p {
   max-width: 1080px;
