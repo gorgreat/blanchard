@@ -554,6 +554,12 @@ figure {
 .dropdown-menu__item:hover .down-icon{
   fill: var(--purple);
 }
+.dropdown-menu__item {
+  position: relative;
+}
+.dropdown-menu__item:hover .dropdown-menu__link{
+  color: var(--purple);
+}
 .search {
   margin-left: auto;
   margin-top: 5px;
@@ -629,6 +635,35 @@ figure {
 .slider__btn:hover{
   text-decoration: none;
 }
+.slider-slide__img {
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider .container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+.slider-slide__img {
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.01);
+  }
+  to {
+    transform: scale(1);
+  }
+} 
+.slider-slide {
+  overflow: hidden;
+}
+ 
 .content p {
   margin-top: 0;
   max-width: 1080px;
@@ -929,6 +964,17 @@ details[open] .author__list {
   border-top: 1px solid var(--purple);
   border-bottom: 1px solid var(--purple);
 }
+.author__description {
+  display: none;
+}
+.author__description_active {
+  display: block;
+}
+.author__list-item-link-active {
+  text-decoration: none;
+  color: var(--purple);
+  font-weight: 600;
+}
 /* events */
 .events .block-title {
   margin-bottom: 0;
@@ -1002,6 +1048,18 @@ details[open] .author__list {
   text-decoration: none;
   border: 2px solid #9D5CD0;
   border-radius: 100px;
+}
+.events__list_row {
+  display: none;
+}
+.events__list_row-active {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;  
+  flex-wrap: wrap;
+}
+.events__all_hide {
+  display: none;
 }
 /* publication */
 .publication {
@@ -1351,4 +1409,273 @@ details[open] .author__list {
   display: inline-block;
   width: 46px;
   text-decoration: none;
+}
+/* simplebar */
+[data-simplebar] {
+  position: relative;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.simplebar-wrapper {
+  overflow: hidden;
+  width: inherit;
+  height: inherit;
+  max-width: inherit;
+  max-height: inherit;
+}
+
+.simplebar-mask {
+  direction: inherit;
+  position: absolute;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: auto !important;
+  height: auto !important;
+  z-index: 0;
+}
+
+.simplebar-offset {
+  direction: inherit !important;
+  box-sizing: inherit !important;
+  resize: none !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.simplebar-content-wrapper {
+  direction: inherit;
+  box-sizing: border-box !important;
+  position: relative;
+  display: block;
+  height: 100%; /* Required for horizontal native scrollbar to not appear if parent is taller than natural height */
+  width: auto;
+  max-width: 100%; /* Not required for horizontal scroll to trigger */
+  max-height: 100%; /* Needed for vertical scroll to trigger */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.simplebar-content-wrapper::-webkit-scrollbar,
+.simplebar-hide-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.simplebar-content:before,
+.simplebar-content:after {
+  content: ' ';
+  display: table;
+}
+
+.simplebar-placeholder {
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+.simplebar-height-auto-observer-wrapper {
+  box-sizing: inherit !important;
+  height: 100%;
+  width: 100%;
+  max-width: 1px;
+  position: relative;
+  float: left;
+  max-height: 1px;
+  overflow: hidden;
+  z-index: -1;
+  padding: 0;
+  margin: 0;
+  pointer-events: none;
+  flex-grow: inherit;
+  flex-shrink: 0;
+  flex-basis: 0;
+}
+
+.simplebar-height-auto-observer {
+  box-sizing: inherit;
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1000%;
+  width: 1000%;
+  min-height: 1px;
+  min-width: 1px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.simplebar-track {
+  z-index: 1;
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+[data-simplebar].simplebar-dragging .simplebar-content {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+[data-simplebar].simplebar-dragging .simplebar-track {
+  pointer-events: all;
+}
+
+.simplebar-scrollbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  min-height: 2px;
+  background-color: var(--purple)
+}
+
+.simplebar-scrollbar:before {
+  position: absolute;
+  content: '';
+  background: black;
+  border-radius: 7px;
+  left: 2px;
+  right: 2px;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+.simplebar-scrollbar.simplebar-visible:before {
+  /* When hovered, remove all transitions from drag handle */
+  opacity: 0.5;
+  transition: opacity 0s linear;
+}
+
+.simplebar-track.simplebar-vertical {
+  top: 0;
+  width: 2px;
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+  top: 2px;
+  bottom: 2px;
+}
+
+.simplebar-track.simplebar-horizontal {
+  left: 0;
+  height: 11px;
+}
+
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar:before {
+  height: 100%;
+  left: 2px;
+  right: 2px;
+}
+
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar {
+  right: auto;
+  left: 0;
+  top: 2px;
+  height: 7px;
+  min-height: 0;
+  min-width: 10px;
+  width: auto;
+}
+
+/* Rtl support */
+[data-simplebar-direction='rtl'] .simplebar-track.simplebar-vertical {
+  right: auto;
+  left: 0;
+}
+
+.hs-dummy-scrollbar-size {
+  direction: rtl;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  height: 500px;
+  width: 500px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.simplebar-hide-scrollbar {
+  position: fixed;
+  left: 0;
+  visibility: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.submenu__items {
+  display: none;
+  position: absolute !important;
+  width: 300px;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;  
+  margin: 0;
+  padding: 40px 40px 20px 40px;
+  list-style: none;
+}
+.submenu__item {
+  margin: 20px 0;
+}
+.submenu__item:first-child {
+  margin-top: 0;
+}
+.submenu__item-link {
+  display: block;
+  width: 220px;
+  padding: 4px 10px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--white);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid transparent;
+}
+.submenu__item-link_tin {
+  background-image: url("../image/menu01.jpg");
+}
+.submenu__item-link_fr {
+  background-image: url("../image/menu02.jpg");
+}
+.submenu__item-link_le {
+  background-image: url("../image/menu03.jpg");
+}
+.submenu__item-link_ve {
+  background-image: url("../image/menu01.jpg");
+}
+.submenu__item-link:hover{
+  text-decoration: none;
+  border: 2px solid var(--purple);
+}
+.dropdown-menu__item:hover .submenu__items {
+  display: block;
+}
+.js-validate-error-label {
+  position: absolute;
+  top: -25px;
+  font-size: 12px;
+  padding-left: 20px;
+}
+.just-validate-tooltip-container {
+  position: relative;
 }
