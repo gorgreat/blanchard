@@ -18,7 +18,7 @@
 
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
     <script src="js/simplebar.min.js"></script>
-
+	
     <script defer src="js/swiper-bundle.min.js"></script>
     <script defer src="js/choices.min.js"></script>
     <script defer src="js/inputmask.min.js"></script>
@@ -31,9 +31,14 @@
         <div class="header-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-2 center-col">
-                        <img class="header__logo" src="image/logo.svg" width="173" height="40"
-                            alt="Blanchard. Художественная галерея">
+                    <button class="burger-menu" aria-label="Меню"><span class="menu-line"></span></button>
+                    <button class="search__submit-mobile">
+                        <svg class="search-icon">
+                            <use xlink:href="image/icons.svg#search-icon"></use>
+                        </svg>
+                    </button>                    
+                    <div class="logo-col  col-lg-2  center-col">
+                        <img class="header__logo" src="image/logo.svg" width="173" height="40" alt="Blanchard. Художественная галерея">
                     </div>
                     <div class="col-lg-9">
                         <nav class="main-nav">
@@ -161,7 +166,7 @@
     </header>
 
     <section class="slider">
-        <div class="swiper-container">
+        <div class="slider-container  swiper-container">
             <div class="swiper-wrapper">
                 <div class="slider-slide swiper-slide">
                     <div class="container">
@@ -328,7 +333,6 @@
                             </div>
                         </div>
 
-
                     </div>
                 </div>
             </div>
@@ -392,8 +396,8 @@
                                 картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день
                                 остаются уделом либералов, которые жаждут быть функционально разнесены на независимые
                                 элементы. </p>
-                            <div class="row catalog-row">
-                                <div class="col-lg-6">
+                            <div class="row catalog-row ">
+                                <div class="col-lg-6  order-2">
                                     <div class="author__description  author__description_active" data-id="01">
                                         <figure class="author__figure">
                                             <img class="author__img" src="image/raffael.jpg" alt="Бенедетто ди Биндо">
@@ -415,9 +419,8 @@
                                             со всевозможными подробностями показана домашняя жизнь библейских персонажей (в
                                             их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
                                     </div>                                            
-  
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6  order-1">
                                     <details open="open">
                                         <summary class="author__years">C 1400 по 1499 гг. <span
                                                 class="summary-icon"><svg class="down-icon">
@@ -645,7 +648,7 @@
                                 </div>
                             </article>
                         </li>
-                    </div>                        
+                    </div>                     
                 </ul>
                 <a href="" class="events__all">Все события</a>
             </div>
@@ -658,54 +661,56 @@
                         <h2 class="block-title">Издания</h2>
                         <form action="" class="publication-form">
                             <label for="" class="publication-form-label">Категории</label>
-                            <div class="publication-form__list-item">
-                                <input id="p01" type="checkbox" class="publication-form__checkbox">
-                                <label class="publication-form__label" for="p01">Бестселлеры</label>
-                            </div>
-                            <div class="publication-form__list-item">
-                                <input id="p02" type="checkbox" class="publication-form__checkbox">
-                                <label class="publication-form__label" for="p02">Искусство</label>
-                            </div>
-                            <div class="publication-form__list-item">
-                                <input id="p03" type="checkbox" class="publication-form__checkbox">
-                                <label class="publication-form__label" for="p03">Архитектура</label>
-                            </div>
-                            <div class="publication-form__list-item">
-                                <input id="p04" type="checkbox" class="publication-form__checkbox">
-                                <label class="publication-form__label" for="p04">Дизайн</label>
-                            </div>
-                            <div class="publication-form__list-item">
-                                <input id="p05" type="checkbox" class="publication-form__checkbox">
-                                <label class="publication-form__label" for="p05">Мода</label>
-                            </div>
-                            <div class="publication-form__list-item">
-                                <input id="p06" type="checkbox" class="publication-form__checkbox">
-                                <label class="publication-form__label" for="p06">Детям</label>
-                            </div>
-                            <div class="publication-form__list-item">
-                                <input id="p07" type="checkbox" class="publication-form__checkbox">
-                                <label class="publication-form__label" for="p07">Художественная литература</label>
-                            </div>
-                            <div class="publication-form__list-item">
-                                <input id="p08" type="checkbox" class="publication-form__checkbox">
-                                <label class="publication-form__label" for="p08">Публицистика</label>
-                            </div>
-                            <div class="publication-form__list-item">
-                                <input id="p09" type="checkbox" class="publication-form__checkbox">
-                                <label class="publication-form__label" for="p09">Путеводители</label>
-                            </div>
-                            <div class="publication-form__list-item">
-                                <input id="p10" type="checkbox" class="publication-form__checkbox">
-                                <label class="publication-form__label" for="p10">Философия</label>
-                            </div>
-                            <div class="publication-form__list-item">
-                                <input id="p11" type="checkbox" class="publication-form__checkbox">
-                                <label class="publication-form__label" for="p11">Учебная литература</label>
-                            </div>
-                            <div class="publication-form__list-item">
-                                <input id="p12" type="checkbox" class="publication-form__checkbox">
-                                <label class="publication-form__label" for="p12">Журналы и газеты</label>
-                            </div>
+                            <div class="publication-form__list-item_row">
+                                <div class="publication-form__list-item">
+                                    <input id="p01" type="checkbox" class="publication-form__checkbox">
+                                    <label class="publication-form__label" for="p01">Бестселлеры</label>
+                                </div>
+                                <div class="publication-form__list-item">
+                                    <input id="p02" type="checkbox" class="publication-form__checkbox">
+                                    <label class="publication-form__label" for="p02">Искусство</label>
+                                </div>
+                                <div class="publication-form__list-item">
+                                    <input id="p03" type="checkbox" class="publication-form__checkbox">
+                                    <label class="publication-form__label" for="p03">Архитектура</label>
+                                </div>
+                                <div class="publication-form__list-item">
+                                    <input id="p04" type="checkbox" class="publication-form__checkbox">
+                                    <label class="publication-form__label" for="p04">Дизайн</label>
+                                </div>
+                                <div class="publication-form__list-item">
+                                    <input id="p05" type="checkbox" class="publication-form__checkbox">
+                                    <label class="publication-form__label" for="p05">Мода</label>
+                                </div>
+                                <div class="publication-form__list-item">
+                                    <input id="p06" type="checkbox" class="publication-form__checkbox">
+                                    <label class="publication-form__label" for="p06">Детям</label>
+                                </div>
+                                <div class="publication-form__list-item">
+                                    <input id="p07" type="checkbox" class="publication-form__checkbox">
+                                    <label class="publication-form__label" for="p07">Художественная литература</label>
+                                </div>
+                                <div class="publication-form__list-item">
+                                    <input id="p08" type="checkbox" class="publication-form__checkbox">
+                                    <label class="publication-form__label" for="p08">Публицистика</label>
+                                </div>
+                                <div class="publication-form__list-item">
+                                    <input id="p09" type="checkbox" class="publication-form__checkbox">
+                                    <label class="publication-form__label" for="p09">Путеводители</label>
+                                </div>
+                                <div class="publication-form__list-item">
+                                    <input id="p10" type="checkbox" class="publication-form__checkbox">
+                                    <label class="publication-form__label" for="p10">Философия</label>
+                                </div>
+                                <div class="publication-form__list-item">
+                                    <input id="p11" type="checkbox" class="publication-form__checkbox">
+                                    <label class="publication-form__label" for="p11">Учебная литература</label>
+                                </div>
+                                <div class="publication-form__list-item">
+                                    <input id="p12" type="checkbox" class="publication-form__checkbox">
+                                    <label class="publication-form__label" for="p12">Журналы и газеты</label>
+                                </div>
+                            </div>                                
                             <div class="publication-form__range">
                                 <label for="" class="publication-form-label">Цена</label>
                                 <div class="publication-form__range-row">
@@ -717,7 +722,7 @@
                                         <label class="to" for="to">до</label>
                                         <input class="input-to" id="to" type="text" placeholder="25 000">
                                     </div>
-                                    <label class="currency">рублей</label>
+                                    <label class="currency">руб.</label>
                                 </div>
                             </div>
                         </form>
@@ -910,11 +915,11 @@
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12  col-md-6">
                         <img class="footer__logo" src="image/logo.svg" width="173" height="40"
                             alt="Blanchard. Художественная галерея">
                     </div>
-                    <div class="col-6">
+                    <div class="col-12  col-md-6">
                         <ul class="social__list">
                             <li class="social__item">
                                 <a href="#" class="social__link  social__link-vk">
@@ -923,19 +928,19 @@
                                     </svg>
                                 </a>
                             </li>
-                            <li class="social__item"></li>
-                            <a href="#" class="social__link  social__link-in">
-                                <svg class="instagram-icon">
-                                    <use xlink:href="/image/icons.svg#instagram-icon"></use>
-                                </svg>
-                            </a>
+                            <li class="social__item">
+                                <a href="#" class="social__link  social__link-in">
+                                    <svg class="instagram-icon">
+                                        <use xlink:href="/image/icons.svg#instagram-icon"></use>
+                                    </svg>
+                                </a>
                             </li>
-                            <li class="social__item"></li>
-                            <a href="#" class="social__link  social__link-fs">
-                                <svg class="fasebook-icon">
-                                    <use xlink:href="/image/icons.svg#fasebook-icon"></use>
-                                </svg>
-                            </a>
+                            <li class="social__item">
+                                <a href="#" class="social__link  social__link-fs">
+                                    <svg class="fasebook-icon">
+                                        <use xlink:href="/image/icons.svg#fasebook-icon"></use>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
                     </div>

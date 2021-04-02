@@ -38,3 +38,37 @@
     height: 46px;
     max-width: 46px;
 }
+@media (min-width: 768px) and (max-width:1024px)  { 
+    .telegram-icon, .whatsapp-icon {
+        width: 58px;
+        height: 58px;
+        max-width: 58px;
+    }
+    .vk-icon, .instagram-icon, .fasebook-icon {
+        width: 60px;
+        height: 60px;
+        max-width: 90px;
+    }
+    .search-icon {
+        width: 35px;
+        height: 35px;
+        max-width: 35px;
+    }
+}
+@media only screen and (max-width:767px)  {
+    .telegram-icon, .whatsapp-icon {
+        width: 48px;
+        height: 48px;
+        max-width: 58px;
+    }
+    .vk-icon, .instagram-icon, .fasebook-icon {
+        width: 50px;
+        height: 50px;
+        max-width: 50px;
+    }
+    .search-icon {
+        width: 16px;
+        height: 16px;
+        max-width: 16px;
+    }
+}

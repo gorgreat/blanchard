@@ -3,13 +3,27 @@ window.addEventListener('DOMContentLoaded', function() {
     var mySwiper = new Swiper('.swiper-container', {
         loop: true
     });
-
+  
     var mySwiper = new Swiper('.gallery__slider', {
         loop: true,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        breakpoints: {
+            320: {
+               slidesPerView: 1,
+            //   spaceBetween: 20,
+            },
+            // 768: {
+            //   slidesPerView: 4,
+            //   spaceBetween: 40,
+            // },
+            // 1024: {
+            //   slidesPerView: 2,
+            //   spaceBetween: 50,
+            // },
+          }        
     });
 
     var mySwiper = new Swiper('.publication-slider', {
@@ -20,6 +34,23 @@ window.addEventListener('DOMContentLoaded', function() {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            768: {
+               slidesPerView: 2,
+               spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 2,
+                spaceBetween: 75,
+            },
+            1600: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+            },            
+        }          
     });
 
     var mySwiper = new Swiper('.partners__slider', {
@@ -30,6 +61,22 @@ window.addEventListener('DOMContentLoaded', function() {
             nextEl: '.partners__slider-next',
             prevEl: '.partners__slider-prev',
         },
+        breakpoints: {
+            320: {
+               slidesPerView: 1,
+            },
+            768: {
+               slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 2,
+                spaceBetween: 70,
+            },       
+            1600: {
+                slidesPerView: 3,
+                spaceBetween: 70,
+            },                   
+          }          
     });
 
     // select
