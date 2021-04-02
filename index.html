@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/icons.css">
 
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
     <script src="js/simplebar.min.js"></script>
 	
     <script defer src="js/swiper-bundle.min.js"></script>
@@ -150,7 +150,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-4 center-col">
-                        <form action="" class="search" method="GET">
+                        <form action="search.php" class="search" method="GET">
                             <button class="search__submit">
                                 <svg class="search-icon">
                                     <use xlink:href="image/icons.svg#search-icon"></use>
@@ -226,7 +226,7 @@
             <div class="container">
                 <div class="row gallery-row">
                     <div class="gallery__form">
-                        <form action="" class="filter-form">
+                        <form action="filter.php" class="filter-form">
                             <h2 class="block-title block-title_white">Галерея</h2>
                             <label class="filter-form__label" for="select">Фильтровать по:</label>
                             <select name="filter-form__select" id="select" class="select">
@@ -559,8 +559,8 @@
         <section class="section  events" id="events">
             <div class="container">
                 <h2 class="block-title">События</h2>
-                <ul class="events__list">
-                    <li class="events__item">
+                <div class="events__list">
+                    <div class="events__item">
                         <article class="events__item-content">
                             <figure class="events__item-img">
                                 <img src="image/events01.jpg" alt="Книжная гравюра в живом восприятии">
@@ -577,8 +577,8 @@
                                 <a href="" class="events__item-readmore">Подробнее</a>
                             </div>
                         </article>
-                    </li>
-                    <li class="events__item">
+                    </div>
+                    <div class="events__item">
                         <article class="events__item-content">
                             <figure class="events__item-img">
                                 <img src="image/events02.jpg" alt="«Открытая дискуссия». Дмитрий Петров и Сергей Ильин">
@@ -597,8 +597,8 @@
                                 <a href="" class="events__item-readmore">Подробнее</a>
                             </div>
                         </article>
-                    </li>
-                    <li class="events__item">
+                    </div>
+                    <div class="events__item">
                         <article class="events__item-content">
                             <figure class="events__item-img">
                                 <img src="image/events03.jpg" alt="Выставка «Формация 2020»">
@@ -616,24 +616,24 @@
                                 <a href="" class="events__item-readmore">Подробнее</a>
                             </div>
                         </article>
-                    </li>
+                    </div>
                     <div class="events__list_row">
-                        <li class="events__item">
-                                <article class="events__item-content">
-                                    <figure class="events__item-img">
-                                        <img src="image/events04.jpg" alt="XXIV Международная биеннале молодого искусства">
-                                        <figcaption class="events__item-img-title">Третьяковка на Крымском валу <span>с 31 марта по 21 апреля</span></figcaption>
-                                    </figure>
-                                    <div class="events__item-text">
-                                        <div class="events__item-txt">
-                                            <h3 class="events__item-title">XXIV Международная биеннале молодого искусства</h3>
-                                            <p>Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых...</p>
-                                        </div>
-                                        <a href="" class="events__item-readmore">Подробнее</a>
+                        <div class="events__item">
+                            <article class="events__item-content">
+                                <figure class="events__item-img">
+                                    <img src="image/events04.jpg" alt="XXIV Международная биеннале молодого искусства">
+                                    <figcaption class="events__item-img-title">Третьяковка на Крымском валу <span>с 31 марта по 21 апреля</span></figcaption>
+                                </figure>
+                                <div class="events__item-text">
+                                    <div class="events__item-txt">
+                                        <h3 class="events__item-title">XXIV Международная биеннале молодого искусства</h3>
+                                        <p>Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых...</p>
                                     </div>
-                                </article>
-                            </li>
-                        <li class="events__item">
+                                    <a href="" class="events__item-readmore">Подробнее</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="events__item">
                             <article class="events__item-content">
                                 <figure class="events__item-img">
                                     <img src="image/events05.jpg" alt="Джон Винзор. Фотографии из серии «Метафора серебра»">
@@ -647,9 +647,9 @@
                                     <a href="" class="events__item-readmore">Подробнее</a>
                                 </div>
                             </article>
-                        </li>
+                        </div>
                     </div>                     
-                </ul>
+                </div>
                 <a href="" class="events__all">Все события</a>
             </div>
         </section>
@@ -659,8 +659,8 @@
                 <div class="row">
                     <div class="col-lg-3">
                         <h2 class="block-title">Издания</h2>
-                        <form action="" class="publication-form">
-                            <label for="" class="publication-form-label">Категории</label>
+                        <form action="sort.php" class="publication-form">
+                            <label class="publication-form-label">Категории</label>
                             <div class="publication-form__list-item_row">
                                 <div class="publication-form__list-item">
                                     <input id="p01" type="checkbox" class="publication-form__checkbox">
@@ -712,7 +712,7 @@
                                 </div>
                             </div>                                
                             <div class="publication-form__range">
-                                <label for="" class="publication-form-label">Цена</label>
+                                <label class="publication-form-label">Цена</label>
                                 <div class="publication-form__range-row">
                                     <div class="publication-form__range-item publication-form__range-item-from">
                                         <label class="from" for="from">От</label>
@@ -825,7 +825,7 @@
                     экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей
                     оппозиции могут быть рассмотрены <span class="tooltip-icon"
                         data-tooltip="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции"></span>
-                    </span>исключительно в разрезе маркетинговых и финансовых <span class="tooltip-icon"
+                    исключительно в разрезе маркетинговых и финансовых <span class="tooltip-icon"
                         data-tooltip="В стремлении повысить качество"></span>предпосылок. Банальные, но неопровержимые
                     выводы, а также представители современных социальных резервов призывают нас к новым свершениям,
                     которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной
@@ -876,7 +876,7 @@
                 <div class="contacts-col">
                     <h3>Шоурум №4</h3>
                     <address>Леонтьевский переулок, дом 5, строение 1</address>
-                    <form action="" class="callback">
+                    <form action="form.php" class="callback">
                         <div class="callback__title">Заказать обратный звонок</div>
                         <div class="just-validate-tooltip-container">
                             <input type="text" class="input" name="name" placeholder="Имя*" required data-validate-field="name">
