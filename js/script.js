@@ -196,12 +196,12 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 
     // /события 
-    let eventsListRow = document.querySelector(".events__list_row");
+    let eventsListRow = document.querySelector(".events__list-row");
     let eventsAllBtn = document.querySelector(".events__all");
 
     eventsAllBtn.addEventListener("click", function(e) {
         e.preventDefault();
-        eventsListRow.classList.add("events__list_row-active");
+        eventsListRow.classList.add("events__list-row-active");
         eventsAllBtn.classList.add("events__all_hide");
     });
 

@@ -17,8 +17,7 @@
     <link rel="stylesheet" href="css/icons.css">
 
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
-    <script src="js/simplebar.min.js"></script>
-	
+    <script defer src="js/simplebar.min.js"></script>	
     <script defer src="js/swiper-bundle.min.js"></script>
     <script defer src="js/choices.min.js"></script>
     <script defer src="js/inputmask.min.js"></script>
@@ -32,7 +31,7 @@
             <div class="container">
                 <div class="row">
                     <button class="burger-menu" aria-label="Меню"><span class="menu-line"></span></button>
-                    <button class="search__submit-mobile">
+                    <button class="search-mobile" aria-label="Поиск">
                         <svg class="search-icon">
                             <use xlink:href="image/icons.svg#search-icon"></use>
                         </svg>
@@ -69,7 +68,7 @@
                     </div>
                     <div class="col-lg-1 center-col">
                         <div class="login">
-                            <a class="login__link" href="">
+                            <a class="login__link" href="#">
                                 <svg class="login-icon">
                                     <use xlink:href="image/icons.svg#login-icon"></use>
                                 </svg>
@@ -85,69 +84,73 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
-                        <ul class="dropdown-menu__items">
+                        <div class="dropdown-menu">
+                            <ul class="dropdown-menu__items">
                             <li class="dropdown-menu__item">
-                                <a href="" class="dropdown-menu__link">Реализм
+                                <a href="#" class="dropdown-menu__link">Реализм
                                     <svg class="down-icon">
                                         <use xlink:href="image/icons.svg#down-icon"></use>
                                     </svg>
                                 </a>
-                                <ul class="submenu__items" id="simplebar">
+                                <div class="submenu">
+                                    <ul class="submenu__items" id="simplebar">
                                     <li class="submenu__item">
-                                        <a href="" class="submenu__item-link submenu__item-link_tin">Тинторетто</a>
+                                        <a href="#" class="submenu__item-link submenu__item-link_tin">Тинторетто</a>
                                     </li>
                                     <li class="submenu__item">
-                                        <a href="" class="submenu__item-link submenu__item-link_fr">Фридрих</a>
+                                        <a href="#" class="submenu__item-link submenu__item-link_fr">Фридрих</a>
                                     </li>
                                     <li class="submenu__item">
-                                        <a href="" class="submenu__item-link submenu__item-link_le">Леонардо</a>
+                                        <a href="#" class="submenu__item-link submenu__item-link_le">Леонардо</a>
                                     </li>
                                     <li class="submenu__item">
-                                        <a href="" class="submenu__item-link submenu__item-link_ve">Верроккьо</a>
+                                        <a href="#" class="submenu__item-link submenu__item-link_ve">Верроккьо</a>
                                     </li>
                                     <li class="submenu__item">
-                                        <a href="" class="submenu__item-link submenu__item-link_tin">Тинторетто</a>
+                                        <a href="#" class="submenu__item-link submenu__item-link_tin">Тинторетто</a>
                                     </li>
                                     <li class="submenu__item">
-                                        <a href="" class="submenu__item-link submenu__item-link_fr">Фридрих</a>
+                                        <a href="#" class="submenu__item-link submenu__item-link_fr">Фридрих</a>
                                     </li>
                                     <li class="submenu__item">
-                                        <a href="" class="submenu__item-link submenu__item-link_le">Леонардо</a>
+                                        <a href="#" class="submenu__item-link submenu__item-link_le">Леонардо</a>
                                     </li>
                                     <li class="submenu__item">
-                                        <a href="" class="submenu__item-link submenu__item-link_ve">Верроккьо</a>
+                                        <a href="#" class="submenu__item-link submenu__item-link_ve">Верроккьо</a>
                                     </li>                                    
-                                </ul>
+                                    </ul>
+                                </div>
                             </li>
                             <li class="dropdown-menu__item">
-                                <a href="" class="dropdown-menu__link">Импрессионизм
+                                <a href="#" class="dropdown-menu__link">Импрессионизм
                                     <svg class="down-icon">
                                         <use xlink:href="image/icons.svg#down-icon"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="dropdown-menu__item">
-                                <a href="" class="dropdown-menu__link">Постимпрессионизм
+                                <a href="#" class="dropdown-menu__link">Постимпрессионизм
                                     <svg class="down-icon">
                                         <use xlink:href="image/icons.svg#down-icon"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="dropdown-menu__item">
-                                <a href="" class="dropdown-menu__link">Авангард
+                                <a href="#" class="dropdown-menu__link">Авангард
                                     <svg class="down-icon">
                                         <use xlink:href="image/icons.svg#down-icon"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="dropdown-menu__item">
-                                <a href="" class="dropdown-menu__link">Футуризм
+                                <a href="#" class="dropdown-menu__link">Футуризм
                                     <svg class="down-icon">
                                         <use xlink:href="image/icons.svg#down-icon"></use>
                                     </svg>
                                 </a>
                             </li>
-                        </ul>
+                            </ul>
+                        </div>
                     </div>
                     <div class="col-lg-4 center-col">
                         <form action="search.php" class="search" method="GET">
@@ -171,9 +174,9 @@
                 <div class="slider-slide swiper-slide">
                     <div class="container">
                         <div class="slider__text">
-                            <div class="slider__text-title">Прикоснитесь к прекрасному</div>
-                            <div class="slider__text-description">Мы вынуждены отталкиваться от того, что реализация
-                                намеченных плановых заданий создаёт предпосылки для новых предложений.</div>
+                            <h2 class="slider__text-title">Прикоснитесь к прекрасному</h2>
+                            <p class="slider__text-description">Мы вынуждены отталкиваться от того, что реализация
+                                намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
                             <a href="#contacts" class="slider__btn">Подписаться на рассылку</a>
                         </div>
                     </div>
@@ -182,7 +185,7 @@
                 <div class="slider-slide swiper-slide">
                     <div class="container">
                         <div class="slider__text">
-                            <div class="slider__text-title">Прикоснитесь к прекрасному</div>
+                            <h2 class="slider__text-title">Прикоснитесь к прекрасному</h2>
                             <div class="slider__text-description">Мы вынуждены отталкиваться от того, что реализация
                                 намеченных плановых заданий создаёт предпосылки для новых предложений.</div>
                             <a href="#contacts" class="slider__btn">Подписаться на рассылку</a>
@@ -193,7 +196,7 @@
                 <div class="slider-slide swiper-slide">
                     <div class="container">
                         <div class="slider__text">
-                            <div class="slider__text-title">Прикоснитесь к прекрасному</div>
+                            <h2 class="slider__text-title">Прикоснитесь к прекрасному</h2>
                             <div class="slider__text-description">Мы вынуждены отталкиваться от того, что реализация
                                 намеченных плановых заданий создаёт предпосылки для новых предложений.</div>
                             <a href="#contacts" class="slider__btn">Подписаться на рассылку</a>
@@ -236,7 +239,7 @@
                             </select>
                         </form>
                         <p>Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a
-                                href="">авторизуйтесь</a>, либо воспользуйтесь лицензией. </p>
+                                href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией. </p>
                     </div>
                     <div class="gallery__content">
                         <div class="swiper-container  gallery__slider">
@@ -345,19 +348,19 @@
                         <h2 class="block-title">Каталог</h2>
                         <ul class="catalog__countries-items">
                             <li class="catalog__countries-item">
-                                <a class="flag-link  flag-link_france"></a>
+                                <span class="flag-link  flag-link_france"></span>
                             </li>
                             <li class="catalog__countries-item">
-                                <a class="flag-link  flag-link_germany"></a>
+                                <span class="flag-link  flag-link_germany"></span>
                             </li>
                             <li class="catalog__countries-item">
-                                <a class="flag-link  flag-link_italy"></a>
+                                <span class="flag-link  flag-link_italy"></span>
                             </li>
                             <li class="catalog__countries-item">
-                                <a class="flag-link  flag-link_russia  flag-link_active"></a>
+                                <span class="flag-link  flag-link_russia  flag-link_active"></span>
                             </li>
                             <li class="catalog__countries-item">
-                                <a class="flag-link  flag-link_belgium"></a>
+                                <span class="flag-link  flag-link_belgium"></span>
                             </li>
                         </ul>
                     </div>
@@ -370,24 +373,141 @@
                                 картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день
                                 остаются уделом либералов, которые жаждут быть функционально разнесены на независимые
                                 элементы. </p>
+                                <div class="row catalog-row">
+                                    <div class="author  col-lg-6  order-2">
+                                        <div class="author__description  author__description_active" data-id="01">
+                                            <img class="author__img" src="image/raffael.jpg" alt="Бенедетто ди Биндо">
+                                            <h3 class="author__img-title">Benedetto di Bindo</h3>
+                                            <p class="date">1380—85</p>
+                                            <p class="author__text">Benedetto di Bindo est resté dans l'histoire de l'art comme sienne l'artiste, pour ainsi dire, de la «deuxième série», en dépit du fait qu'au cours de sa courte vie, il a effectué un certain nombre de très prestigieuses commandes, y compris le travail dans Сиенском la cathédrale (les travaux de la cathédrale principale de la république du secondaire, les artistes ne devaient). Il a été formé par Taddeo di Bartolo, un grand maître siennois du gothique tardif, dans lequel Benedetto a travaillé avec Gregorio di Cecco. Les œuvres de Simone Martini ont eu la plus grande influence sur son travail, en particulier dans le choix de la couleur, et les visages finement travaillés de ses personnages ressemblent aux œuvres de Giovanni da Milano.</p>
+                                        </div>                                                                              
+                                        <div class="author__description" data-id="11">
+                                            <img class="author__img" src="image/ghirlandaio.jpg" alt="Domenico Ghirlandaio">
+                                            <h3 class="author__img-title">Domenico Ghirlandaio</h3>
+                                            <p class="date">2 июня 1448 — 11 января 1494.</p>
+                                            <p class="author__text"> du Quattrocento,
+                                                fondateur de la dynastie artistique, poursuivie par son frère David et son fils
+                                                Ridolfo. Chef de l'atelier d'art où le jeune Michel-ange pendant un an
+                                                il a acquis des compétences professionnelles. Auteur de cycles de fresque dans lesquels le convexe,
+                                                avec toutes sortes de détails montre la vie à la maison des personnages bibliques (dans
+                                                leurs rôles sont des citoyens nobles de Florence dans les costumes de l'époque).</p>
+                                        </div>                                            
+                                    </div>
+                                    <div class="author  col-lg-6  order-1">
+                                        <details open="open">
+                                            <summary class="author__years">C 1400 по 1499 гг. <span
+                                                    class="summary-icon"><svg class="down-icon">
+                                                        <use xlink:href="image/icons.svg#down-icon"></use>
+                                                    </svg></span></summary>
+                                            <div class="author__list">
+                                                <ul class="author__list-col">
+                                                    <li class="author__list-item">
+                                                        <a href="#" class="author__list-item-link  author__list-item-link-active" data-id="01">Benedetto di Bindo</a>
+                                                    </li>
+                                                    <li class="author__list-item">
+                                                        <a href="#" class="author__list-item-link" data-id="11">Domenico Ghirlandaio</a>
+                                                    </li>
+                                                </ul>
+                                              </div>
+                                        </details>
+                                    </div>
+                                </div>                                                                
                         </div>
                         <div class="catalog__tab-decription">
                             <p class="catalog-description">germany</p>
-                            <p class="catalog-description">Акционеры крупнейших компаний, которые представляют собой
-                                яркий пример континентально-европейского типа политической культуры, будут объявлены
-                                нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей
-                                картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день
-                                остаются уделом либералов, которые жаждут быть функционально разнесены на независимые
-                                элементы. </p>
+                            <p class="catalog-description">Aktionäre der größten Unternehmen, die
+                                ein Paradebeispiel der kontinentaleuropäischen Art der politischen Kultur, wird angekündigt
+                                verstößt gegen die universellen Normen der Ethik und Moral. Nur ein Teil des gemeinsamen
+                                gemälde, die die traditionelle Produktion, die Nanotechnologie, bis heute verdrängen wollen
+                                es bleiben die Liberalen, die funktional in unabhängige aufgeteilt werden wollen
+                                Elemente.</p>
+                                <div class="row catalog-row">
+                                    <div class="author  col-lg-6  order-2">
+                                        <div class="author__description  author__description_active" data-id="01">
+                                            <img class="author__img" src="image/raffael.jpg" alt="Бенедетто ди Биндо">
+                                            <h3 class="author__img-title">Benedikt von Bindo</h3>
+                                            <p class="date">1380—85</p>
+                                            <p class="author__text">Benedetto di Bindo est resté dans l'histoire de l'art comme sienne l'artiste, pour ainsi dire, de la «deuxième série», en dépit du fait qu'au cours de sa courte vie, il a effectué un certain nombre de très prestigieuses commandes, y compris le travail dans Сиенском la cathédrale (les travaux de la cathédrale principale de la république du secondaire, les artistes ne devaient). Il a été formé par Taddeo di Bartolo, un grand maître siennois du gothique tardif, dans lequel Benedetto a travaillé avec Gregorio di Cecco. Les œuvres de Simone Martini ont eu la plus grande influence sur son travail, en particulier dans le choix de la couleur, et les visages finement travaillés de ses personnages ressemblent aux œuvres de Giovanni da Milano.</p>
+                                        </div>                                                                              
+                                        <div class="author__description" data-id="11">
+                                            <img class="author__img" src="image/ghirlandaio.jpg" alt="Domenico Ghirlandaio">
+                                            <h3 class="author__img-title">Domenico Ghirlandaio</h3>
+                                            <p class="date">2 июня 1448 — 11 января 1494.</p>
+                                            <p class="author__text"> h.,
+                                                Gründer der künstlerischen dynastie, verfolgt von seinem Bruder David und seinem Sohn
+                                                Ridolfo. Leiter der Kunstwerkstatt, wo der junge Michelangelo für ein Jahr
+                                                er erwarb berufliche Fähigkeiten. Autor von Fresko-Zyklen, in denen die konvexe,
+                                                mit allen Arten von Details zeigt das Leben zu Hause der biblischen Figuren (in
+                                                Ihre Rollen sind edle Bürger von Florenz in den Kostümen der Zeit).</p>
+                                        </div>                                            
+                                    </div>
+                                    <div class="author  col-lg-6  order-1">
+                                        <details open="open">
+                                            <summary class="author__years">C 1400 по 1499 гг. <span
+                                                    class="summary-icon"><svg class="down-icon">
+                                                        <use xlink:href="image/icons.svg#down-icon"></use>
+                                                    </svg></span></summary>
+                                            <div class="author__list">
+                                                <ul class="author__list-col">
+                                                    <li class="author__list-item">
+                                                        <a href="#" class="author__list-item-link  author__list-item-link-active" data-id="01">Benedikt von Bindo</a>
+                                                    </li>
+                                                    <li class="author__list-item">
+                                                        <a href="#" class="author__list-item-link" data-id="11">Domenico Ghirlandaio</a>
+                                                    </li>
+                                                </ul>
+                                              </div>
+                                        </details>
+                                    </div>
+                                </div>                                                       
                         </div>
                         <div class="catalog__tab-decription">
                             <p class="catalog-description">italy</p>
-                            <p class="catalog-description">Акционеры крупнейших компаний, которые представляют собой
-                                яркий пример континентально-европейского типа политической культуры, будут объявлены
-                                нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей
-                                картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день
-                                остаются уделом либералов, которые жаждут быть функционально разнесены на независимые
-                                элементы. </p>
+                            <p class="catalog-description">Azionisti delle più grandi aziende che rappresentano
+                                un chiaro esempio di tipo europeo continentale cultura politica sarà annunciato
+                                che violano le norme universali di etica e moralità. Essendo solo una parte del Comune
+                                dipinti che cercano di soppiantare la produzione tradizionale, la nanotecnologia fino ad oggi
+                                rimangono il destino dei liberali che bramano di essere funzionalmente distanziati in indipendenti
+                                elementi.</p>
+                                <div class="row catalog-row">
+                                    <div class="author  col-lg-6  order-2">
+                                        <div class="author__description  author__description_active" data-id="01">
+                                            <img class="author__img" src="image/raffael.jpg" alt="Benedetto di Bindo">
+                                            <h3 class="author__img-title">Benedetto di Bindo</h3>
+                                            <p class="date">1380—85</p>
+                                            <p class="author__text">breve vita, ha eseguito una serie di incarichi prestigiosi, tra cui il lavoro in Сиенском la cattedrale (i lavori della cattedrale principale della repubblica di secondario, artisti dovuto solo). Fu formato da Taddeo di Bartolo, grande maestro senese del tardo gotico, in cui Benedetto lavorò con Gregorio di Cecco. Le opere di Simone Martini hanno avuto la maggiore influenza sul suo lavoro, specialmente nella scelta del colore, e i volti finemente lavorati dei suoi personaggi ricordano le opere di Giovanni da Milano.</p>
+                                        </div>                                                                              
+                                        <div class="author__description" data-id="11">
+                                            <img class="author__img" src="image/ghirlandaio.jpg" alt="Domenico Ghirlandaio">
+                                            <h3 class="author__img-title">Domenico Ghirlandaio</h3>
+                                            <p class="date">2 июня 1448 — 11 января 1494.</p>
+                                            <p class="author__text"> h.,
+                                                Fondateur de la dynastie artistique, persécuté par son frère David et son fils
+ Ridolfo. Chef de L'atelier D'art, où le jeune Michel-Ange pendant un an
+ il a acquis des Compétences professionnelles. Auteur de cycles de fresque, dans lequel le convexe,
+ avec toutes sortes de détails montrant la vie à la maison des personnages bibliques (dans
+ Leurs rôles sont nobles citoyens de Florence dans les costumes de L'époque).</p>
+                                        </div>                                            
+                                    </div>
+                                    <div class="author  col-lg-6  order-1">
+                                        <details open="open">
+                                            <summary class="author__years">C 1400 по 1499 гг. <span
+                                                    class="summary-icon"><svg class="down-icon">
+                                                        <use xlink:href="image/icons.svg#down-icon"></use>
+                                                    </svg></span></summary>
+                                            <div class="author__list">
+                                                <ul class="author__list-col">
+                                                    <li class="author__list-item">
+                                                        <a href="#" class="author__list-item-link  author__list-item-link-active" data-id="01">Benedetto di Bindo</a>
+                                                    </li>
+                                                    <li class="author__list-item">
+                                                        <a href="#" class="author__list-item-link" data-id="11">Domenico Ghirlandaio</a>
+                                                    </li>
+                                                </ul>
+                                              </div>
+                                        </details>
+                                    </div>
+                                </div>                                                       
                         </div>
                         <div class="catalog__tab-decription  catalog__tab-decription_active">
                             <p class="catalog-description">Акционеры крупнейших компаний, которые представляют собой
@@ -396,21 +516,17 @@
                                 картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день
                                 остаются уделом либералов, которые жаждут быть функционально разнесены на независимые
                                 элементы. </p>
-                            <div class="row catalog-row ">
-                                <div class="col-lg-6  order-2">
+                            <div class="row catalog-row">
+                                <div class="author  col-lg-6  order-2">
                                     <div class="author__description  author__description_active" data-id="01">
-                                        <figure class="author__figure">
-                                            <img class="author__img" src="image/raffael.jpg" alt="Бенедетто ди Биндо">
-                                            <figcaption class="author__img-title">Бенедетто ди Биндо</figcaption>
-                                        </figure>
+                                        <img class="author__img" src="image/raffael.jpg" alt="Бенедетто ди Биндо">
+                                        <h3 class="author__img-title">Бенедетто ди Биндо</h3>
                                         <p class="date">1380—85</p>
                                         <p class="author__text">Бенедетто ди Биндо остался в истории искусства как сиенский художник, так сказать, «второго ряда», несмотря на то, что за свою короткую жизнь он выполнил ряд весьма престижных заказов, включая работы в Сиенском соборе (работы в главном соборе республики второстепенным художникам не поручались). Обучение он прошёл у Таддео ди Бартоло, крупного сиенского мастера поздней готики, в боттеге которого Бенедетто трудился вместе с Грегорио ди Чекко. Наибольшее влияние на его творчество оказали работы Симоне Мартини, в частности в выборе колорита, а тонко проработанные лица его персонажей напоминают произведения Джованни да Милано. </p>
                                     </div>                                                                              
                                     <div class="author__description" data-id="11">
-                                        <figure class="author__figure">
-                                            <img class="author__img" src="image/ghirlandaio.jpg" alt="Доменико Гирландайо">
-                                            <figcaption class="author__img-title">Доменико Гирландайо</figcaption>
-                                        </figure>
+                                        <img class="author__img" src="image/ghirlandaio.jpg" alt="Доменико Гирландайо">
+                                        <h3 class="author__img-title">Доменико Гирландайо</h3>
                                         <p class="date">2 июня 1448 — 11 января 1494.</p>
                                         <p class="author__text"> Один из ведущих флорентийских художников Кватроченто,
                                             основатель художественной династии, которую продолжили его брат Давид и сын
@@ -420,7 +536,7 @@
                                             их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
                                     </div>                                            
                                 </div>
-                                <div class="col-lg-6  order-1">
+                                <div class="author  col-lg-6  order-1">
                                     <details open="open">
                                         <summary class="author__years">C 1400 по 1499 гг. <span
                                                 class="summary-icon"><svg class="down-icon">
@@ -429,80 +545,80 @@
                                         <div class="author__list">
                                             <ul class="author__list-col">
                                                 <li class="author__list-item">
-                                                    <a href="" class="author__list-item-link  author__list-item-link-active" data-id="01">Бенедетто ди Биндо</a>
+                                                    <a href="#" class="author__list-item-link  author__list-item-link-active" data-id="01">Бенедетто ди Биндо</a>
                                                 </li>
                                                 <li class="author__list-item">
-                                                    <a href="" class="author__list-item-link" data-id="02">Бергоньоне, Амброджо</a>
+                                                    <a href="#" class="author__list-item-link" data-id="02">Бергоньоне, Амброджо</a>
                                                 </li>
                                                 <li class="author__list-item">
-                                                    <a href="" class="author__list-item-link" data-id="03">Биссоло, Франческо</a>
+                                                    <a href="#" class="author__list-item-link" data-id="03">Биссоло, Франческо</a>
                                                 </li>
                                                 <li class="author__list-item">
-                                                    <a href="" class="author__list-item-link" data-id="03">Больтраффио, Джованни</a>
+                                                    <a href="#" class="author__list-item-link" data-id="03">Больтраффио, Джованни</a>
                                                 </li>
                                                 <li class="author__list-item">
-                                                    <a href="" class="author__list-item-link" data-id="04">Бонсиньори, Франческо</a>
+                                                    <a href="#" class="author__list-item-link" data-id="04">Бонсиньори, Франческо</a>
                                                 </li>
                                                 <li class="author__list-item">
-                                                    <a href="" class="author__list-item-link" data-id="05">Боттичини, Рафаэлло</a>
+                                                    <a href="#" class="author__list-item-link" data-id="05">Боттичини, Рафаэлло</a>
                                                 </li>
                                                 <li class="author__list-item">
-                                                    <a href="" class="author__list-item-link" data-id="06">Брамантино</a>
+                                                    <a href="#" class="author__list-item-link" data-id="06">Брамантино</a>
                                                 </li>
                                                 <li class="author__list-item">
-                                                    <a href="" class="author__list-item-link" data-id="07">Бреа, Людовико</a>
+                                                    <a href="#" class="author__list-item-link" data-id="07">Бреа, Людовико</a>
                                                 </li>
                                                 <li class="author__list-item">
-                                                    <a href="" class="author__list-item-link" data-id="08">Бьяджо д’Антонио Туччи</a>
-                                                </li>
-                                            </ul>
-                                            <ul class="author__list-col">
-                                                <li class="author__list-item">
-                                                    <a href="" class="author__list-item-link" data-id="09">Веккьетта</a>
-                                                </li>
-                                                <li class="author__list-item">
-                                                    <a href="" class="author__list-item-link" data-id="10">Андреа Верроккьо</a>
-                                                </li>
-                                                <li class="author__list-item">
-                                                    <a href="" class="author__list-item-link" data-id="11">Доменико Гирландайо</a>
-                                                </li>
-                                                <li class="author__list-item">
-                                                    <a href="" class="author__list-item-link" data-id="12">Беноццо Гоццоли</a>
-                                                </li>
-                                                <li class="author__list-item">
-                                                    <a href="" class="author__list-item-link" data-id="13">Граначчи, Франческо</a>
-                                                </li>
-                                                <li class="author__list-item">
-                                                    <a href="" class="author__list-item-link" data-id="14">Грегорио ди Чекко</a>
-                                                </li>
-                                                <li class="author__list-item">
-                                                    <a href="" class="author__list-item-link" data-id="15">Джованни да Удине</a>
-                                                </li>
-                                                <li class="author__list-item">
-                                                    <a href="" class="author__list-item-link" data-id="16">Джованни ди Паоло</a>
-                                                </li>
-                                                <li class="author__list-item">
-                                                    <a href="" class="author__list-item-link" data-id="17">Джорджоне</a>
+                                                    <a href="#" class="author__list-item-link" data-id="08">Бьяджо д’Антонио Туччи</a>
                                                 </li>
                                             </ul>
                                             <ul class="author__list-col">
                                                 <li class="author__list-item">
-                                                    <a href="" class="author__list-item-link" data-id="18">Парентино, Бернардо</a>
+                                                    <a href="#" class="author__list-item-link" data-id="09">Веккьетта</a>
                                                 </li>
                                                 <li class="author__list-item">
-                                                    <a href="" class="author__list-item-link" data-id="19">Пезеллино</a>
+                                                    <a href="#" class="author__list-item-link" data-id="10">Андреа Верроккьо</a>
                                                 </li>
                                                 <li class="author__list-item">
-                                                    <a href="" class="author__list-item-link" data-id="20">Пьетро Перуджино</a>
+                                                    <a href="#" class="author__list-item-link" data-id="11">Доменико Гирландайо</a>
                                                 </li>
                                                 <li class="author__list-item">
-                                                    <a href="" class="author__list-item-link" data-id="22">Перуцци, Бальдассаре</a>
+                                                    <a href="#" class="author__list-item-link" data-id="12">Беноццо Гоццоли</a>
                                                 </li>
                                                 <li class="author__list-item">
-                                                    <a href="" class="author__list-item-link" data-id="23">Пизанелло</a>
+                                                    <a href="#" class="author__list-item-link" data-id="13">Граначчи, Франческо</a>
                                                 </li>
                                                 <li class="author__list-item">
-                                                    <a href="" class="author__list-item-link" data-id="24">Пинтуриккьо</a>
+                                                    <a href="#" class="author__list-item-link" data-id="14">Грегорио ди Чекко</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="#" class="author__list-item-link" data-id="15">Джованни да Удине</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="#" class="author__list-item-link" data-id="16">Джованни ди Паоло</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="#" class="author__list-item-link" data-id="17">Джорджоне</a>
+                                                </li>
+                                            </ul>
+                                            <ul class="author__list-col">
+                                                <li class="author__list-item">
+                                                    <a href="#" class="author__list-item-link" data-id="18">Парентино, Бернардо</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="#" class="author__list-item-link" data-id="19">Пезеллино</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="#" class="author__list-item-link" data-id="20">Пьетро Перуджино</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="#" class="author__list-item-link" data-id="22">Перуцци, Бальдассаре</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="#" class="author__list-item-link" data-id="23">Пизанелло</a>
+                                                </li>
+                                                <li class="author__list-item">
+                                                    <a href="#" class="author__list-item-link" data-id="24">Пинтуриккьо</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -545,11 +661,59 @@
                                     </details>
 
                                 </div>
-
                             </div>
                         </div>
                         <div class="catalog__tab-decription">
                             <p class="catalog-description">belgium</p>
+                            <p class="catalog-description">Actionnaires des plus grandes entreprises représentant
+                                un exemple clair de culture politique de type européen continental sera annoncé
+                                qui violent les normes universelles d'éthique et de moralité. N'étant qu'une partie de la municipalité
+                                peintures qui cherchent à supplanter la production traditionnelle, la nanotechnologie à ce jour
+                                ils restent le sort des libéraux qui aspirent à être fonctionnellement distancés en indépendants
+                                élément</p>
+                                <div class="row catalog-row">
+                                    <div class="author  col-lg-6  order-2">
+                                        <div class="author__description  author__description_active" data-id="01">
+                                            <img class="author__img" src="image/raffael.jpg" alt="Benedetto di Bindo">
+                                            <h3 class="author__img-title">Benedetto di Bindo</h3>
+                                            <p class="date">1380—85</p>
+                                            <p class="author__text">breve vita, ha eseguito una serie di incarichi prestigiosi, tra cui il lavoro in Сиенском la cattedrale (i lavori della cattedrale principale della repubblica di secondario, artisti dovuto solo). Fu formato da Taddeo di Bartolo, grande maestro senese del tardo gotico, in cui Benedetto lavorò con Gregorio di Cecco. Le opere di Simone Martini hanno avuto la maggiore influenza sul suo lavoro, specialmente nella scelta del colore, e i volti finemente lavorati dei suoi personaggi ricordano le opere di Giovanni da Milano.</p>
+                                        </div>                                                                              
+                                        <div class="author__description" data-id="11">
+                                            <img class="author__img" src="image/ghirlandaio.jpg" alt="Domenico Ghirlandaio">
+                                            <h3 class="author__img-title">Domenico Ghirlandaio</h3>
+                                            <p class="date">2 июня 1448 — 11 января 1494.</p>
+                                            <p class="author__text"> h.,  Fondateur de la dynastie artistique, persécuté par son frère David et son fils
+ Ridolfo. Chef de L'atelier D'art, où le jeune Michel-Ange pendant un an il a acquis des Compétences professionnelles. Auteur de cycles de fresque, dans lequel le convexe,
+ avec toutes sortes de détails montrant la vie à la maison des personnages bibliques (dans  Leurs rôles sont nobles citoyens de Florence dans les costumes de L'époque).  Fondateur de la dynastie artistique, persécuté par son frère David et son fils
+ Ridolfo. Chef de L'atelier D'art, où le jeune Michel-Ange pendant un an  Fondateur de la dynastie artistique, persécuté par son frère David et son fils
+ Ridolfo. Chef de L'atelier D'art, où le jeune Michel-Ange pendant un an</p>
+                                            <p class="author__text"> h.,  Fondateur de la dynastie artistique, persécuté par son frère David et son fils
+    Ridolfo. Chef de L'atelier D'art, où le jeune Michel-Ange pendant un an il a acquis des Compétences professionnelles. Auteur de cycles de fresque, dans lequel le convexe,
+    avec toutes sortes de détails montrant la vie à la maison des personnages bibliques (dans  Leurs rôles sont nobles citoyens de Florence dans les costumes de L'époque).  Fondateur de la dynastie artistique, persécuté par son frère David et son fils
+    Ridolfo. Chef de L'atelier D'art, où le jeune Michel-Ange pendant un an  Fondateur de la dynastie artistique, persécuté par son frère David et son fils
+    Ridolfo. Chef de L'atelier D'art, où le jeune Michel-Ange pendant un an</p> 
+                                        </div>                                            
+                                    </div>
+                                    <div class="author  col-lg-6  order-1">
+                                        <details open="open">
+                                            <summary class="author__years">C 1400 по 1499 гг. <span
+                                                    class="summary-icon"><svg class="down-icon">
+                                                        <use xlink:href="image/icons.svg#down-icon"></use>
+                                                    </svg></span></summary>
+                                            <div class="author__list">
+                                                <ul class="author__list-col">
+                                                    <li class="author__list-item">
+                                                        <a href="#" class="author__list-item-link  author__list-item-link-active" data-id="01">Benedetto di Bindo</a>
+                                                    </li>
+                                                    <li class="author__list-item">
+                                                        <a href="#" class="author__list-item-link" data-id="11">Domenico Ghirlandaio</a>
+                                                    </li>
+                                                </ul>
+                                              </div>
+                                        </details>
+                                    </div>
+                                </div>                              
                         </div>
                     </div>
                 </div>
@@ -574,7 +738,7 @@
                                         династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
                                         мастерской, где юный Микеланджело.</p>
                                 </div>
-                                <a href="" class="events__item-readmore">Подробнее</a>
+                                <a href="#" class="events__item-readmore">Подробнее</a>
                             </div>
                         </article>
                     </div>
@@ -594,7 +758,7 @@
                                         активности представляет собой интересный эксперимент проверки новых принципов
                                         формирования...</p>
                                 </div>
-                                <a href="" class="events__item-readmore">Подробнее</a>
+                                <a href="#" class="events__item-readmore">Подробнее</a>
                             </div>
                         </article>
                     </div>
@@ -613,11 +777,11 @@
                                         перспективное планирование играет определяющее значение для новых принципов
                                         формирования материально-технической и кадровой базы.</p>
                                 </div>
-                                <a href="" class="events__item-readmore">Подробнее</a>
+                                <a href="#" class="events__item-readmore">Подробнее</a>
                             </div>
                         </article>
                     </div>
-                    <div class="events__list_row">
+                    <div class="events__list-row">
                         <div class="events__item">
                             <article class="events__item-content">
                                 <figure class="events__item-img">
@@ -629,7 +793,7 @@
                                         <h3 class="events__item-title">XXIV Международная биеннале молодого искусства</h3>
                                         <p>Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых...</p>
                                     </div>
-                                    <a href="" class="events__item-readmore">Подробнее</a>
+                                    <a href="#" class="events__item-readmore">Подробнее</a>
                                 </div>
                             </article>
                         </div>
@@ -644,13 +808,13 @@
                                         <h3 class="events__item-title">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
                                         <p>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.</p>
                                     </div>
-                                    <a href="" class="events__item-readmore">Подробнее</a>
+                                    <a href="#" class="events__item-readmore">Подробнее</a>
                                 </div>
                             </article>
                         </div>
                     </div>                     
                 </div>
-                <a href="" class="events__all">Все события</a>
+                <span class="events__all">Все события</span>
             </div>
         </section>
 
@@ -660,8 +824,8 @@
                     <div class="col-lg-3">
                         <h2 class="block-title">Издания</h2>
                         <form action="sort.php" class="publication-form">
-                            <label class="publication-form-label">Категории</label>
-                            <div class="publication-form__list-item_row">
+                            <div class="publication-form-label">Категории</div>
+                            <div class="publication-form__list-item-row">
                                 <div class="publication-form__list-item">
                                     <input id="p01" type="checkbox" class="publication-form__checkbox">
                                     <label class="publication-form__label" for="p01">Бестселлеры</label>
@@ -712,7 +876,7 @@
                                 </div>
                             </div>                                
                             <div class="publication-form__range">
-                                <label class="publication-form-label">Цена</label>
+                                <div class="publication-form-label">Цена</div>
                                 <div class="publication-form__range-row">
                                     <div class="publication-form__range-item publication-form__range-item-from">
                                         <label class="from" for="from">От</label>
@@ -722,7 +886,7 @@
                                         <label class="to" for="to">до</label>
                                         <input class="input-to" id="to" type="text" placeholder="25 000">
                                     </div>
-                                    <label class="currency">руб.</label>
+                                    <div class="currency">руб.</div>
                                 </div>
                             </div>
                         </form>
@@ -743,7 +907,7 @@
                                                 Иоханнес</span></div>
                                         <div class="publication-item__price">620 руб</div>
                                     </div>
-                                    <a href="" class="publication-item__order-link">Заказать</a>
+                                    <a href="#" class="publication-item__order-link">Заказать</a>
                                 </div>
                                 <div class="swiper-slide publication-item">
                                     <img src="image/publication02.jpg" width="350" height="390"
@@ -753,7 +917,7 @@
                                                 Эмиль</span></div>
                                         <div class="publication-item__price">2 450 руб</div>
                                     </div>
-                                    <a href="" class="publication-item__order-link">Заказать</a>
+                                    <a href="#" class="publication-item__order-link">Заказать</a>
                                 </div>
                                 <div class="swiper-slide publication-item">
                                     <img src="image/publication03.jpg" width="350" height="390"
@@ -763,7 +927,7 @@
                                         </div>
                                         <div class="publication-item__price">2 200 руб</div>
                                     </div>
-                                    <a href="" class="publication-item__order-link">Заказать</a>
+                                    <a href="#" class="publication-item__order-link">Заказать</a>
                                 </div>
                                 <div class="swiper-slide publication-item">
                                     <img src="image/publication04.jpg" width="350" height="390"
@@ -773,7 +937,7 @@
                                                 Владимир</span></div>
                                         <div class="publication-item__price">1 100 руб</div>
                                     </div>
-                                    <a href="" class="publication-item__order-link">Заказать</a>
+                                    <a href="#" class="publication-item__order-link">Заказать</a>
                                 </div>
                                 <div class="swiper-slide publication-item">
                                     <img src="image/publication05.jpg" width="350" height="390"
@@ -783,7 +947,7 @@
                                             граф...<span>Мюллер-Брокманн, Йозеф</span></div>
                                         <div class="publication-item__price">1 450 руб</div>
                                     </div>
-                                    <a href="" class="publication-item__order-link">Заказать</a>
+                                    <a href="#" class="publication-item__order-link">Заказать</a>
                                 </div>
                                 <div class="swiper-slide publication-item">
                                     <img src="image/publication06.jpg" width="350" height="390"
@@ -793,7 +957,7 @@
                                                 Чваст</span></div>
                                         <div class="publication-item__price">3 200 руб</div>
                                     </div>
-                                    <a href="" class="publication-item__order-link">Заказать</a>
+                                    <a href="#" class="publication-item__order-link">Заказать</a>
                                 </div>
                                 <div class="swiper-slide publication-item">
                                     <img src="image/publication07.jpg" width="350" height="390"
@@ -803,7 +967,7 @@
                                                 Рудольф</span></div>
                                         <div class="publication-item__price">2 200 руб</div>
                                     </div>
-                                    <a href="" class="publication-item__order-link">Заказать</a>
+                                    <a href="#" class="publication-item__order-link">Заказать</a>
                                 </div>
                             </div>
                         </div>
@@ -832,38 +996,40 @@
                     неузнаваемости. Подробнее: <a
                         href="blanchard-art.ru/projects/about">blanchard-art.ru/projects/about</a></p>
                 <h3>Партнёры проектов:</h3>
-                <div class="swiper-container partners__slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide  partners__slider-item">
-                            <img src="image/partners/1849.png" alt="1849" class="partneres__slider-item-img">
-                        </div>
-                        <div class="swiper-slide  partners__slider-item">
-                            <img src="image/partners/camden.png" alt="camden" class="partneres__slider-item-img">
-                        </div>
-                        <div class="swiper-slide  partners__slider-item">
-                            <img src="image/partners/esad.png" alt="esad" class="partneres__slider-item-img">
-                        </div>
-                        <div class="swiper-slide  partners__slider-item">
-                            <img src="image/partners/freelands.png" alt="freelands" class="partneres__slider-item-img">
-                        </div>
-                        <div class="swiper-slide  partners__slider-item">
-                            <img src="image/partners/hiscox.png" alt="freelands" class="partneres__slider-item-img">
-                        </div>
-                        <div class="swiper-slide  partners__slider-item">
-                            <img src="image/partners/ica.png" alt="ica" class="partneres__slider-item-img">
-                        </div>
-                        <div class="swiper-slide  partners__slider-item">
-                            <img src="image/partners/stassen.png" alt="stassen" class="partneres__slider-item-img">
-                        </div>
-                        <div class="swiper-slide  partners__slider-item">
-                            <img src="image/partners/watts.png" alt="watts" class="partneres__slider-item-img">
-                        </div>
-                        <div class="swiper-slide  partners__slider-item">
-                            <img src="image/partners/watts.png" alt="watts" class="partneres__slider-item-img">
-                        </div>
+                <div class="partners">
+                    <div class="swiper-container partners__slider">
+                        <ul class="swiper-wrapper partners__wrapper">
+                            <li class="swiper-slide  partners__slider-item">
+                                <img src="image/partners/1849.png" alt="1849" class="partners__slider-img">
+                            </li>
+                            <li class="swiper-slide  partners__slider-item">
+                                <img src="image/partners/camden.png" alt="camden" class="partners__slider-img">
+                            </li>
+                            <li class="swiper-slide  partners__slider-item">
+                                <img src="image/partners/esad.png" alt="esad" class="partners__slider-img">
+                            </li>
+                            <li class="swiper-slide  partners__slider-item">
+                                <img src="image/partners/freelands.png" alt="freelands" class="partners__slider-img">
+                            </li>
+                            <li class="swiper-slide  partners__slider-item">
+                                <img src="image/partners/hiscox.png" alt="freelands" class="partners__slider-img">
+                            </li>
+                            <li class="swiper-slide  partners__slider-item">
+                                <img src="image/partners/ica.png" alt="ica" class="partners__slider-img">
+                            </li>
+                            <li class="swiper-slide  partners__slider-item">
+                                <img src="image/partners/stassen.png" alt="stassen" class="partners__slider-img">
+                            </li>
+                            <li class="swiper-slide  partners__slider-item">
+                                <img src="image/partners/watts.png" alt="watts" class="partners__slider-img">
+                            </li>
+                            <li class="swiper-slide  partners__slider-item">
+                                <img src="image/partners/watts.png" alt="watts" class="partners__slider-img">
+                            </li>
+                        </ul>
+                        <div class="partners__slider-prev"></div>
+                        <div class="partners__slider-next"></div>
                     </div>
-                    <div class="partners__slider-prev"></div>
-                    <div class="partners__slider-next"></div>
                 </div>
             </div>
         </section>
@@ -877,7 +1043,7 @@
                     <h3>Шоурум №4</h3>
                     <address>Леонтьевский переулок, дом 5, строение 1</address>
                     <form action="form.php" class="callback">
-                        <div class="callback__title">Заказать обратный звонок</div>
+                        <h3 class="callback__title">Заказать обратный звонок</h3>
                         <div class="just-validate-tooltip-container">
                             <input type="text" class="input" name="name" placeholder="Имя*" required data-validate-field="name">
                         </div>
@@ -919,24 +1085,24 @@
                         <img class="footer__logo" src="image/logo.svg" width="173" height="40"
                             alt="Blanchard. Художественная галерея">
                     </div>
-                    <div class="col-12  col-md-6">
+                    <div class="col-12  col-md-6  social">
                         <ul class="social__list">
                             <li class="social__item">
-                                <a href="#" class="social__link  social__link-vk">
+                                <a href="#" class="social__link  social__link_vk" aria-label="Мы в ВКонтакте">
                                     <svg class="vk-icon">
                                         <use xlink:href="/image/icons.svg#vk-icon"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="social__item">
-                                <a href="#" class="social__link  social__link-in">
+                                <a href="#" class="social__link  social__link_in" aria-label="Instagram">
                                     <svg class="instagram-icon">
                                         <use xlink:href="/image/icons.svg#instagram-icon"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="social__item">
-                                <a href="#" class="social__link  social__link-fs">
+                                <a href="#" class="social__link  social__link_fs" aria-label="Fasebook">
                                     <svg class="fasebook-icon">
                                         <use xlink:href="/image/icons.svg#fasebook-icon"></use>
                                     </svg>
