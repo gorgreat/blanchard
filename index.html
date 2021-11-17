@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/icons.css">
 
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
     <script defer src="js/simplebar.min.js"></script>	
     <script defer src="js/swiper-bundle.min.js"></script>
     <script defer src="js/choices.min.js"></script>
@@ -168,44 +168,24 @@
         </div>
     </header>
 
-    <section class="slider">
-        <div class="slider-container  swiper-container">
-            <div class="swiper-wrapper">
-                <div class="slider-slide swiper-slide">
-                    <div class="container">
-                        <div class="slider__text">
-                            <h2 class="slider__text-title">Прикоснитесь к прекрасному</h2>
-                            <p class="slider__text-description">Мы вынуждены отталкиваться от того, что реализация
-                                намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
-                            <a href="#contacts" class="slider__btn">Подписаться на рассылку</a>
-                        </div>
-                    </div>
-                    <div class="slider-slide__img" style="background-image:url(image/slider01.jpg)"></div>                    
-                </div>
-                <div class="slider-slide swiper-slide">
-                    <div class="container">
-                        <div class="slider__text">
-                            <h2 class="slider__text-title">Прикоснитесь к прекрасному</h2>
-                            <div class="slider__text-description">Мы вынуждены отталкиваться от того, что реализация
-                                намеченных плановых заданий создаёт предпосылки для новых предложений.</div>
-                            <a href="#contacts" class="slider__btn">Подписаться на рассылку</a>
-                        </div>
-                    </div>
-                    <div class="slider-slide__img" style="background-image:url(image/slider02.jpg)"></div>                    
-                </div>
-                <div class="slider-slide swiper-slide">
-                    <div class="container">
-                        <div class="slider__text">
-                            <h2 class="slider__text-title">Прикоснитесь к прекрасному</h2>
-                            <div class="slider__text-description">Мы вынуждены отталкиваться от того, что реализация
-                                намеченных плановых заданий создаёт предпосылки для новых предложений.</div>
-                            <a href="#contacts" class="slider__btn">Подписаться на рассылку</a>
-                        </div>
-                    </div>                    
-                    <div class="slider-slide__img" style="background-image:url(image/slider03.jpg)"></div>                                    
-                </div>
+    <section class="offer">
+        <div class="container  offer__container">
+            <div class="offer__text">
+                <h2 class="offer__text-title">Прикоснитесь к прекрасному</h2>
+                <p class="offer__text-description">Мы вынуждены отталкиваться от того, что реализация
+                    намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+                <a href="#contacts" class="offer__btn">Подписаться на рассылку</a>
             </div>
         </div>
+        <div class="offer__item">
+            <div class="offer__item-img" style="background-image:url(image/slider01.jpg)"></div>      
+        </div> 
+        <div class="offer__item">
+            <div class="offer__item-img" style="background-image:url(image/slider02.jpg)"></div>      
+        </div> 
+        <div class="offer__item">
+            <div class="offer__item-img" style="background-image:url(image/slider03.jpg)"></div>      
+        </div> 
     </section>
 
     <main class="main">
@@ -214,7 +194,7 @@
         <section class="section content" id="about">
             <div class="container">
                 <h2 class="block-title">О нас</h2>
-                <p>Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет
+                <p class="content__p">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет
                     каждого участника как способного принимать собственные решения касаемо распределения внутренних
                     резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта
                     влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает,
@@ -238,7 +218,7 @@
                                 <option value="3">Техника</option>
                             </select>
                         </form>
-                        <p>Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a
+                        <p class="gallery__p">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a
                                 href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией. </p>
                     </div>
                     <div class="gallery__content">
@@ -727,14 +707,14 @@
                     <div class="events__item">
                         <article class="events__item-content">
                             <figure class="events__item-img">
-                                <img src="image/events01.jpg" alt="Книжная гравюра в живом восприятии">
+                                <img class="events__img" src="image/events01.jpg" alt="Книжная гравюра в живом восприятии">
                                 <figcaption class="events__item-img-title">Музей им. Щусева <span>с 20 марта по 30
                                         апреля </span></figcaption>
                             </figure>
                             <div class="events__item-text">
                                 <div class="events__item-txt">
                                     <h3 class="events__item-title">Книжная гравюра в живом восприятии</h3>
-                                    <p>Один из ведущих флорентийских художников Кватроченто, основатель художественной
+                                    <p class="events__item-p">Один из ведущих флорентийских художников Кватроченто, основатель художественной
                                         династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
                                         мастерской, где юный Микеланджело.</p>
                                 </div>
@@ -745,7 +725,7 @@
                     <div class="events__item">
                         <article class="events__item-content">
                             <figure class="events__item-img">
-                                <img src="image/events02.jpg" alt="«Открытая дискуссия». Дмитрий Петров и Сергей Ильин">
+                                <img class="events__img" src="image/events02.jpg" alt="«Открытая дискуссия». Дмитрий Петров и Сергей Ильин">
                                 <figcaption class="events__item-img-title">ММОМА <span>24 марта 19:00</span>
                                 </figcaption>
                             </figure>
@@ -753,7 +733,7 @@
                                 <div class="events__item-txt">
                                     <h3 class="events__item-title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
                                     </h3>
-                                    <p>Высокий уровень вовлечения представителей целевой аудитории является четким
+                                    <p class="events__item-p">Высокий уровень вовлечения представителей целевой аудитории является четким
                                         доказательством простого факта: постоянный количественный рост и сфера нашей
                                         активности представляет собой интересный эксперимент проверки новых принципов
                                         формирования...</p>
@@ -765,14 +745,14 @@
                     <div class="events__item">
                         <article class="events__item-content">
                             <figure class="events__item-img">
-                                <img src="image/events03.jpg" alt="Выставка «Формация 2020»">
+                                <img class="events__img" src="image/events03.jpg" alt="Выставка «Формация 2020»">
                                 <figcaption class="events__item-img-title">Еврейский музей <span>с 31 марта по 21
                                         апреля</span></figcaption>
                             </figure>
                             <div class="events__item-text">
                                 <div class="events__item-txt">
                                     <h3 class="events__item-title">Выставка «Формация 2020»</h3>
-                                    <p>Идейные соображения высшего порядка, а также современная методология разработки
+                                    <p class="events__item-p">Идейные соображения высшего порядка, а также современная методология разработки
                                         играет важную роль в формировании глубокомысленных рассуждений. Также как
                                         перспективное планирование играет определяющее значение для новых принципов
                                         формирования материально-технической и кадровой базы.</p>
@@ -785,13 +765,13 @@
                         <div class="events__item">
                             <article class="events__item-content">
                                 <figure class="events__item-img">
-                                    <img src="image/events04.jpg" alt="XXIV Международная биеннале молодого искусства">
+                                    <img class="events__img" src="image/events04.jpg" alt="XXIV Международная биеннале молодого искусства">
                                     <figcaption class="events__item-img-title">Третьяковка на Крымском валу <span>с 31 марта по 21 апреля</span></figcaption>
                                 </figure>
                                 <div class="events__item-text">
                                     <div class="events__item-txt">
                                         <h3 class="events__item-title">XXIV Международная биеннале молодого искусства</h3>
-                                        <p>Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых...</p>
+                                        <p class="events__item-p">Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых...</p>
                                     </div>
                                     <a href="#" class="events__item-readmore">Подробнее</a>
                                 </div>
@@ -800,13 +780,13 @@
                         <div class="events__item">
                             <article class="events__item-content">
                                 <figure class="events__item-img">
-                                    <img src="image/events05.jpg" alt="Джон Винзор. Фотографии из серии «Метафора серебра»">
+                                    <img class="events__img" src="image/events05.jpg" alt="Джон Винзор. Фотографии из серии «Метафора серебра»">
                                     <figcaption class="events__item-img-title">ММАМ <span>с 8 апреля по 20 мая</span></figcaption>
                                 </figure>
                                 <div class="events__item-text">
                                     <div class="events__item-txt">
                                         <h3 class="events__item-title">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
-                                        <p>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.</p>
+                                        <p class="events__item-p">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.</p>
                                     </div>
                                     <a href="#" class="events__item-readmore">Подробнее</a>
                                 </div>
@@ -814,7 +794,7 @@
                         </div>
                     </div>                     
                 </div>
-                <span class="events__all">Все события</span>
+                <button aria-label="Все события" class="events__all">Все события</button>
             </div>
         </section>
 
@@ -979,7 +959,7 @@
         <section class="section projects" id="projects">
             <div class="container">
                 <h2 class="block-title">Проекты</h2>
-                <p>Предварительные выводы: постоянное информационно-пропагандистское обеспечение <span
+                <p class="projects__p">Предварительные выводы: постоянное информационно-пропагандистское обеспечение <span
                         class="tooltip-icon"
                         data-tooltip="Пример современных тенденций - современная методология разработки"></span> нашей
                     деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё
@@ -995,7 +975,7 @@
                     которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной
                     неузнаваемости. Подробнее: <a
                         href="blanchard-art.ru/projects/about">blanchard-art.ru/projects/about</a></p>
-                <h3>Партнёры проектов:</h3>
+                <h3 class="projects__h3">Партнёры проектов:</h3>
                 <div class="partners">
                     <div class="swiper-container partners__slider">
                         <ul class="swiper-wrapper partners__wrapper">
